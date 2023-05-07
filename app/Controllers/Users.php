@@ -2,12 +2,12 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class Users extends BaseController
 {
     public function index()
     {
-        $data['headTitle'] = "Dashoard";
-        $data['module'] = "dashboard";
+        $data['headTitle'] = "Users";
+        $data['module'] = "users";
         return view('layout/app', compact('data'));
     }
 }
