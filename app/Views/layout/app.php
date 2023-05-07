@@ -67,8 +67,6 @@
     <script src="<?php echo base_url(); ?>/js/vendors.bundle.js" type="text/javascript"></script>
     <script src="<?php echo base_url(); ?>/js/app.bundle.js" type="text/javascript"></script>
     <script src="<?php echo base_url(); ?>/js/datatables.bundle.js" type="text/javascript"></script>
-    <script src="<?php echo base_url(); ?>/js/listing.js" type="text/javascript"></script>
-    <script src="<?php echo base_url(); ?>/js/custom.js" type="text/javascript"></script>
     <script type="text/javascript">
         /* Activate smart panels */
         $('#js-page-content').smartPanel();
