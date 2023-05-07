@@ -20,9 +20,19 @@
     <!-- ENDING GLOBAL MANDATORY STYLES -->
 
     <!-- Favicon Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url(); ?>/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url(); ?>/img/favicon/favicon-32x32.png">
+    <link rel="mask-icon" href="<?php echo base_url(); ?>/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" media="screen, print" href="<?php echo base_url(); ?>/css/datatables.bundle.css">
+    <style type="text/css">
+        .error {
+            color: red;
+        }
+    </style>
+    <script>
+		var SITE_URL = '<?php echo base_url(); ?>';
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <!-- END HEAD -->
 
@@ -56,10 +66,16 @@
 
     <script src="<?php echo base_url(); ?>/js/vendors.bundle.js" type="text/javascript"></script>
     <script src="<?php echo base_url(); ?>/js/app.bundle.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>/js/datatables.bundle.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>/js/listing.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>/js/custom.js" type="text/javascript"></script>
     <script type="text/javascript">
         /* Activate smart panels */
         $('#js-page-content').smartPanel();
     </script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js"></script>
 </body>
 <!-- END BODY -->
 </html>

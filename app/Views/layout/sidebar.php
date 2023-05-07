@@ -1,7 +1,7 @@
 <aside class="page-sidebar">
     <div class="page-logo">
         <a href="#" class="page-logo-link press-scale-down d-flex align-items-center position-relative" data-toggle="modal" data-target="#modal-shortcut">
-            <img src="img/logo.png" alt="SmartAdmin WebApp" aria-roledescription="logo">
+            <img src="<?php echo base_url('img/logo.png') ?>" alt="SmartAdmin WebApp" aria-roledescription="logo">
             <span class="page-logo-text mr-1">SmartAdmin WebApp</span>
             <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span>
         </a>
@@ -9,7 +9,7 @@
     <!-- BEGIN PRIMARY NAVIGATION -->
     <nav id="js-primary-nav" class="primary-nav" role="navigation">
         <div class="info-card">
-            <img src="img/demo/avatars/avatar-admin.png" class="profile-image rounded-circle" alt="Dr. Codex Lantern">
+            <img src="<?php echo base_url('img/demo/avatars/avatar-admin.png') ?>" class="profile-image rounded-circle" alt="Dr. Codex Lantern">
             <div class="info-card-text">
                 <a href="#" class="d-flex align-items-center text-white">
                     <span class="text-truncate text-truncate-sm d-inline-block">
@@ -18,7 +18,7 @@
                 </a>
                 <span class="d-inline-block text-truncate text-truncate-sm">London, UK</span>
             </div>
-            <img src="img/card-backgrounds/cover-2-lg.png" class="cover" alt="cover">
+            <img src="<?php echo base_url('img/card-backgrounds/cover-2-lg.png') ?>" class="cover" alt="cover">
         </div>
 
         <ul id="js-nav-menu" class="nav-menu">
