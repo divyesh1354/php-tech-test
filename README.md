@@ -14,6 +14,19 @@ More information about the plans for version 4 can be found in [CodeIgniter 4](h
 The user guide corresponding to the latest version of the framework can be found
 [here](https://codeigniter4.github.io/userguide/).
 
+## Server Requirements
+
+PHP version 7.4 or higher is required, with the following extensions installed:
+
+- [intl](http://php.net/manual/en/intl.requirements.php)
+- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+
+Additionally, make sure that the following extensions are enabled in your PHP:
+
+- json (enabled by default - don't turn it off)
+- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
+- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+
 ## Installation & updates
 
 `composer create-project codeigniter4/appstarter` then `composer update` whenever
@@ -28,35 +41,27 @@ to your `app` folder. The affected files can be copied or merged from
 Copy `env` to `.env` and tailor for your app, specifically the baseURL
 and any database settings.
 
-## Important Change with index.php
+## Database Table
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+Run this MySql Query in your database. 
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+`CREATE TABLE users (
+	id int(11) NOT NULL AUTO_INCREMENT,
+	role ENUM('user', 'admin') NOT NULL DEFAULT 'user',
+	first_name varchar(250) NOT NULL,
+	last_name varchar(250) NOT NULL,
+	email varchar(250) NOT NULL,
+	mobile varchar(250) NOT NULL,
+	username varchar(250) NOT NULL,
+	password varchar(250) NOT NULL,
+	is_active ENUM('0', '1') NOT NULL DEFAULT '1',
+	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	deleted_at TIMESTAMP NULL,
+	PRIMARY KEY (id)
+) ENGINE=InnoDB`
 
-**Please** read the user guide for a better explanation of how CI4 works!
+## Run your project
 
-## Repository Management
+To run your project use `php spark serve` command in your terminal and run `http://localhost` in your browser.
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
