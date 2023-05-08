@@ -1,4 +1,4 @@
-# CRUD Operation Using CodeIgniter 4 + SmartAdmin Theme  + Javascript/Jquery 
+# CRUD Operation Using CodeIgniter 4 + SmartAdmin Theme  + Javascript/Jquery + MySql
 
 ## What is CodeIgniter?
 
