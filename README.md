@@ -1,4 +1,4 @@
-# CodeIgniter 4 Application Starter
+# CRUD Operation Using CodeIgniter 4 + SmartAdmin Theme  + Javascript/Jquery 
 
 ## What is CodeIgniter?
 
