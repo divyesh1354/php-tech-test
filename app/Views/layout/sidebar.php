@@ -9,7 +9,7 @@
     <!-- BEGIN PRIMARY NAVIGATION -->
     <nav id="js-primary-nav" class="primary-nav" role="navigation">
         <div class="info-card">
-            <img src="<?php echo base_url('img/demo/avatars/avatar-admin.png') ?>" class="profile-image rounded-circle" alt="Dr. Codex Lantern">
+            <img src="<?php echo base_url('img/demo/avatars/avatar-admin.png') ?>" class="profile-image rounded-circle" alt="Divyesh Gangani">
             <div class="info-card-text">
                 <a href="#" class="d-flex align-items-center text-white">
                     <span class="text-truncate text-truncate-sm d-inline-block">
@@ -30,7 +30,7 @@
                     </span>
                 </a>
             </li>
-            <li class="">
+            <li class="active">
                 <a href="/users" title="Users" data-filter-tags="users">
                     <i class="fal fa-users"></i>
                     <span class="nav-link-text" data-i18n="nav.users">

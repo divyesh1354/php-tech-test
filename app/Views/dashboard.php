@@ -13,7 +13,7 @@
             <div class="p-3 bg-primary-300 rounded overflow-hidden position-relative text-white mb-g">
                 <div class="">
                     <h3 class="display-4 d-block l-h-n m-0 fw-500">
-                        21.5k
+                        <?php echo ($data['usersCount']) ? count($data['usersCount']) : 0 ?>
                         <small class="m-0 l-h-n">users added</small>
                     </h3>
                 </div>
