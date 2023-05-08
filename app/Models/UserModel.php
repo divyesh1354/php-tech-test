@@ -10,7 +10,7 @@ class UserModel extends Model
     protected $useAutoIncrement = true;
     protected $returnType     = 'array';
     protected $useSoftDeletes = true;
-    protected $allowedFields = ['first_name', 'last_name', 'email', 'mobile', 'password', 'role', 'username'];
+    protected $allowedFields = ['first_name', 'last_name', 'email', 'mobile', 'password', 'role', 'username', 'is_active'];
 
     // Dates
     protected $createdField  = 'created_at';

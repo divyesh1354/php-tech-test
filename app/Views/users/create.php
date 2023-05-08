@@ -45,6 +45,13 @@
                                 <label class="form-label" for="mobile">Mobile</label>
                                 <input type="text" id="mobile" name="mobile" class="form-control" placeholder="Mobile">
                             </div>
+                            <div class="form-group">
+                                <label class="form-label" for="is_active">Status</label>
+                                <select id="is_active" name="is_active" class="form-control">
+                                    <option value="1">Active</option>
+                                    <option value="0">Inactive</option>
+                                </select>
+                            </div>
                             <button class="btn btn-primary waves-effect waves-themed" type="submit">Create User</button>
                         </form>
                     </div>

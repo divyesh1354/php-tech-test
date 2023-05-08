@@ -52,7 +52,8 @@ class Users extends BaseController
             'email' => $this->request->getVar('email'),
             'mobile' => $this->request->getVar('mobile'),
             'username' => $this->request->getVar('username'),
-            'password' => password_hash($this->request->getVar('password'), PASSWORD_BCRYPT)
+            'password' => password_hash($this->request->getVar('password'), PASSWORD_BCRYPT),
+            'is_active' => $this->request->getVar('is_active'),
         ];
         $model = new UserModel();
         $model->save($data);
@@ -88,7 +89,8 @@ class Users extends BaseController
             'last_name' => $this->request->getVar('last_name'),
             'email' => $this->request->getVar('email'),
             'mobile' => $this->request->getVar('mobile'),
-            'username' => $this->request->getVar('username')
+            'username' => $this->request->getVar('username'),
+            'is_active' => $this->request->getVar('is_active'),
         ];
 
         $userModel = new UserModel();
